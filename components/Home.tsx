@@ -1,12 +1,18 @@
-import React from 'react'
+"use client"
+import {useState} from 'react'
 import { BackgroundLines } from './ui/background-lines'
 import { ReadMore } from './ui/readMore'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards'
+import { experiences } from '@/constants'
+
+
+import Experience from './ui/Experience'
+import { Project } from './ui/Projects'
 
 
 const HomeComponent = () => {
 
-const aboutMe = "In 2018, I embarked on my journey into software development, initially honing my skills through Free Code Camp before delving into a software training bootcamp known as ATLP, facilitated by Andela Rwanda.Fast forward to today, I boast over 5 years of immersive experience as a Web & Mobile Engineer. Throughout my career, I have collaborated with various engineering firms, contributing my expertise to diverse projects.Checkout my experience sectionAmong my notable achievements is the creation of Sinc, an innovative event ticketing platform, in collaboration with my Co-Founders. Sinc has significantly transformed and enhanced the events industry landscape in Rwanda.Beyond coding, I am passionate about expanding my knowledge in Cyber Security.During my leisure time, you can find me indulging in pool table, socializing with friends, or immersing myself in the vibrant events scene, often facilitated by Sinc."
+const aboutMe = "In 2016, I embarked on my journey into software development, initially honing my skills through a certificate of introduction to python at Regis University before pursuing a bachelor's degree at Laval University in 2017-2021.<br><br>Fast forward to today, I boast over 5 years of immersive experience in Web & Mobile software development. Throughout my career, I have collaborated with various engineering firms, contributing my expertise to diverse projects. Checkout my experience section.<br><br>Among my notable achievements is the creation of Sinc, an innovative event ticketing platform, in collaboration with my Co-Founders. Sinc has significantly transformed and enhanced the events industry landscape in Rwanda.<br><br>Beyond coding, I am passionate about expanding my knowledge in Artificial intelligence.During my leisure time, you can find me indulging in pool table, socializing with friends."
 const testimonials = [
     {
       quote:
@@ -57,7 +63,7 @@ const testimonials = [
         image:"/assets/Typescript.svg"
     },
   ];
-
+ 
 return (
     <>
         <section className="">
@@ -65,15 +71,15 @@ return (
                 <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
                     Hello 👋, <br /> I'm Jean de Dieu Uwimana.
                 </h2>
-                <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
-                    A Full stack developer 🧑‍💻 Dedicated to crafting accessible Web and Mobile solutions, Based in Canada.
+                <p className="max-w-xl mx-auto md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 text-center">
+                    A Full stack developer 🧑‍💻 based in Canada Dedicated to crafting accessible Web and Mobile solutions.
                 </p>
             </div>
 
         </section>
         <section className="w-full flex-col justify-center items-center my-8">
-            <div className="md:w-9/12 md:text-center md:mx-auto">
-                <h2 className="h2-bold py-8">ABOUT ME</h2>
+            <div className="md:w-9/12 md:text-center md:mx-auto mx-8">
+                <h2 className="md:h2-bold h3-medium text-center py-8 text-neutral-700 dark:text-neutral-400 ">ABOUT ME</h2>
                 <ReadMore id="read-more-text" text={aboutMe} />
             </div>
 
@@ -86,8 +92,27 @@ return (
         />
 
         </section>
-        <section className="">
+        <section className="w-full flex-col justify-center items-center my-8 ">
+            <div className="md:w-9/12 md:text-center md:mx-auto mx-8">
+                    <h2 className="md:h2-bold h3-medium text-center py-8 text-neutral-700 dark:text-neutral-400 ">EXPERIENCE</h2>
+            </div>
+            {
+                experiences.map((experience)=>(
+                    <Experience key={experience.company} company={experience.company} title={experience.title} descriptions={experience.descriptions}/>
+                    
 
+                ))
+
+            }
+        </section>
+
+        <section className="w-full text-center py-4">
+            <h2 className="md:h2-bold h3-medium text-center text-neutral-700 dark:text-neutral-400 ">PROJECTS</h2>
+          
+            <div className='flex justify-center items-center gap-6'>
+                <Project />
+                <Project />
+            </div> 
         </section>
     </>
   )

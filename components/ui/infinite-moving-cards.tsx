@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li
             className="max-w-full relative rounded-full flex-shrink-0 "
-            key={item.name}
+            key={idx}
           >
             <div className="flex justify-center items-center">
                <div className="relative z-20  flex flex-row items-center">

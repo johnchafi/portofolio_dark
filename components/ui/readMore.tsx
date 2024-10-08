@@ -1,6 +1,7 @@
 
 "use client"
 import { useState } from 'react'
+import parse from 'html-react-parser';
 
 
 
@@ -30,12 +31,11 @@ export const ReadMore = ({ id, text, amountOfWords = 40 }: ReadMoreProps) => {
     <p id={id} className='md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400'>
       {/* {beginText} */}
       {/* { ReactHtmlParser (beginText) } */}
-      <span
-        dangerouslySetInnerHTML={{
-             __html: beginText 
-
-
-        }}></span>
+      <span>
+        {
+          parse(beginText)
+        }
+      </span>
       
       {itCanOverflow && (
         <>
@@ -43,9 +43,9 @@ export const ReadMore = ({ id, text, amountOfWords = 40 }: ReadMoreProps) => {
           <span 
             className={`${!isExpanded && 'hidden'}`} 
             aria-hidden={!isExpanded}
-            dangerouslySetInnerHTML={{ __html: ' ' + endText }}
+            // dangerouslySetInnerHTML={{ __html: ' ' + endText }}
           >
-            {/* {endText} */}
+            {parse(endText)}
           </span>
           <span
             className='text-violet-400 ml-2'

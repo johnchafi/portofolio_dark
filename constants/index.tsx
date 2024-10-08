@@ -17,6 +17,7 @@ export const experiences = [
   {
       company : "Desjardins",
       title : "Programmer Analyst",
+      imageSrc: "/assets/Logo-Desjardins.jpeg",
       descriptions:
         [
           "Collaborated with clients to gather requirements and provide effective software solutions.",
@@ -32,6 +33,7 @@ export const experiences = [
  {
   company : "Krispii.inc, Leonard Agency web, Laval University",
   title : "Full stack developer",
+  imageSrc:"/assets/image_holder.png",
   descriptions:
     [
       "Evaluated various software products in case of issues",
@@ -59,7 +61,44 @@ export const socialMedia = [
   },
   {
     id: 3,
-    img: "assets/link.svg",
+    img: "/assets/link.svg",
     link:"Https://linkedin.com/in/jean-de-dieu-u-779418122",
   },
 ];
+
+
+export const projects = [
+  {
+    title : 'Denarius',
+    description: 'I designed and implemented webpages for Denarius exchange',
+    image:'/assets/denarius.png',
+    link:'http://denarius.com',
+    languages:['Javascript', 'HTML', 'CSS']
+
+  },
+  {
+    title : 'Evently',
+    description: 'Event & Ticketing Platform for hosting events.',
+    image:'/assets/denarius.png',
+    link:'',
+    languages:['NextJs', 'Tailwind', 'NodeJS', 'MongoDB']
+
+  },
+  {
+    title : 'Umovie',
+    description: 'A clone of IMDB movie',
+    image:'/assets/movie.png',
+    link:'https://moviejohn.netlify.app/',
+    languages:['ReactJs', 'Styled components', 'External API']
+
+  },
+
+  {
+    title : 'Portofolio',
+    description: 'My personal website portfolio',
+    image:'/assets/portofolio_black.png',
+    link:'https://github.com/johnchafi/portofolio_dark',
+    languages:['NextJs', 'Tailwind', 'Framer motion']
+
+  },
+]

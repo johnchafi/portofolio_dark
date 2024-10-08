@@ -7,11 +7,9 @@ export default function Home() {
     <div className="flex h-screen flex-col">
       
         <HeaderMenu />
-        {/* <BackgroundLines className="flex items-center justify-center w-full flex-col px-4"> */}
           <main className="flex-1">
             <HomeComponent />
           </main>
-        {/* </BackgroundLines> */}
         <Footer />
    
      

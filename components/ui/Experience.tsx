@@ -12,11 +12,12 @@ import { motion } from "framer-motion";
 type ExpericenceProps = {
     company:string,
     title:string,
+    imageSrc:string,
     descriptions:string[],
 
 }
 
-const Experience = ({company,title, descriptions}: ExpericenceProps) => {
+const Experience = ({company,title, descriptions, imageSrc}: ExpericenceProps) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div 
@@ -30,7 +31,7 @@ const Experience = ({company,title, descriptions}: ExpericenceProps) => {
         <div className="flex items-center justify-between px-4">
             <div className='flex'>
                 <div className='w-14 mx-2'>
-                    <Image className='rounded-full h-14 w-full object-cover' src="/assets/john.png" width={78} height={56} alt="logo"/>
+                    <Image className='rounded-full h-14 w-full object-cover' src={imageSrc} width={78} height={56} alt="logo"/>
                 </div>
                 <div className="w-1/2 font-semibold">
                     <p className='md:p-medium-16 p-medium-14'>

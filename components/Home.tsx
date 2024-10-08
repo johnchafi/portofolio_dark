@@ -1,7 +1,7 @@
 "use client"
 import { ReadMore } from './ui/readMore'
 import { InfiniteMovingCards } from './ui/infinite-moving-cards'
-import { experiences } from '@/constants'
+import { experiences, projects } from '@/constants'
 
 
 import Experience from './ui/Experience'
@@ -96,7 +96,7 @@ return (
             </div>
             {
                 experiences.map((experience)=>(
-                    <Experience key={experience.company} company={experience.company} title={experience.title} descriptions={experience.descriptions}/>
+                    <Experience key={experience.company} {...experience}/>
                     
 
                 ))
@@ -107,9 +107,10 @@ return (
         <section id="projects" className="w-full text-center py-4">
             <h2 className="md:h2-bold h3-medium text-center text-neutral-700 dark:text-neutral-400">PROJECTS</h2>
           
-            <div className='md:flex-center md:gap-3 gap-2 mx-8 '>
-                <Project />
-                <Project />
+            <div className='w-full flex-center flex-wrap md:gap-10 gap-2'>
+              {
+                projects.map((project, index)=>( <Project key={index} {...project}/>))
+              }
             </div> 
         </section>
     </>

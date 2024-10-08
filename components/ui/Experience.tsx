@@ -27,18 +27,19 @@ const Experience = ({company,title, descriptions}: ExpericenceProps) => {
         onOpenChange={setIsOpen}
         className="w-full space-y-2"
     >
-        <div className="flex items-center justify-between space-x-4 px-4">
-            <div className='flex gap-2'>
-                <Image className='rounded-full' src="/assets/john.png" width={78} height={56} alt="logo"/>
+        <div className="flex items-center justify-between px-4">
+            <div className='flex'>
+                <div className='w-14 mx-2'>
+                    <Image className='rounded-full h-14 w-full object-cover' src="/assets/john.png" width={78} height={56} alt="logo"/>
+                </div>
                 <div className="w-1/2 font-semibold">
-                    <p className='min-w-max'>
+                    <p className='md:p-medium-16 p-medium-14'>
                         {company}
                     </p>
-                    <h4 className='w-fit text-neutral-700 dark:text-neutral-400'>
+                    <h4 className='md:p-medium-16 p-medium-14text-neutral-700 dark:text-neutral-400'>
                     {title}
                     </h4>
                 </div>
-        
             </div>
         
             <CollapsibleTrigger asChild className='px-24'>

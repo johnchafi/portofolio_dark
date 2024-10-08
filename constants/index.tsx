@@ -1,15 +1,15 @@
 export const headerLinks = [
     {
       label: 'Experience',
-      route: '/experience',
+      route: '#experience',
     },
     {
       label: 'Projects',
-      route: '/projects',
+      route: '#projects',
     },
     {
       label: 'Contact',
-      route: '/contact',
+      route: '#contact',
     },
   ]
 
@@ -54,14 +54,12 @@ export const experiences = [
 export const socialMedia = [
   {
     id: 1,
-    img: "git.svg",
-  },
-  {
-    id: 2,
-    img: "twit.svg",
+    img: "/assets/git.svg",
+    link:"Https://github.com/johnchafi",
   },
   {
     id: 3,
-    img: "link.svg",
+    img: "assets/link.svg",
+    link:"Https://linkedin.com/in/jean-de-dieu-u-779418122",
   },
 ];

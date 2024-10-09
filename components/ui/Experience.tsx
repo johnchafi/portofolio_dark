@@ -4,20 +4,19 @@ import {
     CollapsibleContent,
     CollapsibleTrigger,
   } from "@/components/ui/collapsible"
-import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronLeft } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import { motion } from "framer-motion";
 
-type ExpericenceProps = {
+type ExperinceProps = {
     company:string,
     title:string,
     imageSrc:string,
     descriptions:string[],
-
 }
 
-const Experience = ({company,title, descriptions, imageSrc}: ExpericenceProps) => {
+const Experience = ({company,title, descriptions, imageSrc}: ExperinceProps) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div 

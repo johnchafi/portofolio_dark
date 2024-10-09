@@ -79,7 +79,7 @@ export const projects = [
   {
     title : 'Evently',
     description: 'Event & Ticketing Platform for hosting events.',
-    image:'/assets/denarius.png',
+    image:'/assets/evently.png',
     link:'',
     languages:['NextJs', 'Tailwind', 'NodeJS', 'MongoDB']
 
@@ -102,3 +102,28 @@ export const projects = [
 
   },
 ]
+
+export const aboutMe = "In 2016, I embarked on my journey into software development, initially honing my skills through a certificate of introduction to python at Regis University before pursuing a bachelor's degree at Laval University in 2017-2021.<br><br>Fast forward to today, I boast over 5 years of immersive experience in Web & Mobile software development. Throughout my career, I have collaborated with various engineering firms, contributing my expertise to diverse projects. Checkout my experience section.<br><br>Currently, i am working on an innovative event ticketing platform (Evently) that will significantly transform and enhanced the events industry in my province.<br><br>More over , Beyond coding, I am passionate about expanding my knowledge in Artificial intelligence.During my leisure time, you can find me indulging in pool table and socializing with friends."
+export const testimonials = [
+    {
+      image:"/assets/GraphQl.svg"
+    },
+    {
+      image:"/assets/Javascript.svg"
+    },
+    {
+      image:"/assets/NextJs.svg"
+    },
+    {
+      image:"/assets/React.svg"
+    },
+    {
+      image:"/assets/ReactNative.svg"
+    },
+    {
+      image:"/assets/TailwindCss.svg"
+    },
+    {
+      image:"/assets/Typescript.svg"
+    },
+  ];

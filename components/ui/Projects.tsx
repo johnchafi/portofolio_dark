@@ -42,28 +42,6 @@ export function Project({title, description, image, link, languages} : ProjectPr
           />
         </CardItem>
         <div className="flex justify-between mt-4 md:p-medium-16 p-medium-14 text-neutral-500">
-          {/* <CardItem
-            translateZ={20}
-            as="button"
-            target="__blank"
-            className="px-4 py-2 rounded-xl"
-          >
-           NextJs
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl"
-          >
-            Tailwind
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl"
-          >
-            Framer motion
-          </CardItem> */}
           {
             languages.map((language, index)=>(<CardItem key={index}
               translateZ={20}

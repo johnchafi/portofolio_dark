@@ -33,10 +33,10 @@ const Experience = ({company,title, descriptions, imageSrc}: ExperinceProps) => 
                     <Image className='rounded-full h-14 w-full object-cover' src={imageSrc} width={78} height={56} alt="logo"/>
                 </div>
                 <div className="w-1/2 font-semibold">
-                    <p className='md:p-medium-16 p-medium-14'>
+                    <p className='md:p-medium-16 p-medium-14 whitespace-nowrap '>
                         {company}
                     </p>
-                    <h4 className='md:p-medium-16 p-medium-14text-neutral-700 dark:text-neutral-400'>
+                    <h4 className='md:p-medium-16 p-medium-14text-neutral-700 dark:text-neutral-400 whitespace-nowrap'>
                     {title}
                     </h4>
                 </div>

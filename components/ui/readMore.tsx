@@ -33,7 +33,7 @@ export const ReadMore = ({ id, text, amountOfWords = 40 }: ReadMoreProps) => {
       {/* { ReactHtmlParser (beginText) } */}
       <span>
         {
-          parse(beginText)
+          parse(beginText + ' ')
         }
       </span>
       

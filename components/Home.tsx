@@ -45,10 +45,13 @@ return (
                 ))
             }
         </section>
-        <section id="projects" className="w-full text-center py-4 sm:mx-8">
-            <h2 className="md:h2-bold h3-medium text-center text-neutral-700 dark:text-neutral-400">PROJECTS</h2>
+        <section id="projects" className="w-full flex-col justify-center items-center">
+            <div className="md:w-9/12 md:text-center md:mx-auto">
+                    <h2 className="md:h2-bold h3-medium text-center py-4 text-neutral-700 dark:text-neutral-400 ">PROJECTS</h2>
+            </div>
+            {/* <h2 className="md:h2-bold h3-medium text-center text-neutral-700 dark:text-neutral-400">PROJECTS</h2> */}
           
-            <div className='w-full flex-center flex-wrap md:gap-10 gap-2'>
+            <div className='w-full flex-center flex-wrap md:gap-6 gap-2 flex-1'>
               {
                 projects.map((project, index)=>( <Project key={index} {...project}/>))
               }

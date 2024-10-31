@@ -10,7 +10,7 @@ import Image from "next/image"
 import MobileNav from "./ui/MobileNav"
   
 export function HeaderMenu() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
   const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     };

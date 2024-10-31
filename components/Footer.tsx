@@ -20,7 +20,7 @@ const Footer = () => {
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
-          <a href="mailto:johnchafi@gmail.com">
+          <a className='hover:cursor-pointer' href="mailto:johnchafi@gmail.com" target='_blank'>
             <MagicButton
               title="Let's get in touch"
               icon={<NavigationIcon className='w-4'/>}

@@ -15,8 +15,19 @@ export const headerLinks = [
 
 export const experiences = [
   {
+    company : "Self employed",
+    title : "CTO Eventhub",
+    imageSrc: "/assets/john.png",
+    descriptions:
+      [
+        "I am building an innovative event ticketing platform (Eventhub) that will significantly transform and enhanced the events industry in my province",
+   
+
+      ]  
+  },
+  {
       company : "Desjardins",
-      title : "Programmer Analyst",
+      title : "Programmer Analyst (Contractor)",
       imageSrc: "/assets/Logo-Desjardins.jpeg",
       descriptions:
         [
@@ -70,16 +81,16 @@ export const socialMedia = [
 export const projects = [
   {
     title : 'Denarius',
-    description: 'I designed and implemented webpages for Denarius exchange',
+    description: 'I designed and implemented professional pages for Denarius exchange',
     image:'/assets/denarius.png',
     link:'http://denarius.com',
     languages:['Javascript', 'HTML', 'CSS']
 
   },
   {
-    title : 'Evently',
+    title : 'Eventhub',
     description: 'Event & Ticketing Platform for hosting events.',
-    image:'/assets/evently.png',
+    image:'/assets/eventhub.png',
     link:'',
     languages:['NextJs', 'Tailwind', 'NodeJS', 'MongoDB']
 
@@ -103,7 +114,7 @@ export const projects = [
   },
 ]
 
-export const aboutMe = "In 2016, I embarked on my journey into software development, initially honing my skills through a certificate of introduction to python at Regis University before pursuing a bachelor's degree at Laval University in 2017-2021.<br><br>Fast forward to today, I boast over 5 years of immersive experience in Web & Mobile software development. Throughout my career, I have collaborated with various engineering firms, contributing my expertise to diverse projects. Checkout my experience section.<br><br>Currently, i am working on an innovative event ticketing platform (Evently) that will significantly transform and enhanced the events industry in my province.<br><br>More over , Beyond coding, I am passionate about expanding my knowledge in Artificial intelligence.During my leisure time, you can find me indulging in pool table and socializing with friends."
+export const aboutMe = "In 2016, I embarked on my journey into software development, initially honing my skills through a certificate of introduction to python at Regis University before pursuing a bachelor's degree at Laval University in 2017-2021.<br><br>Fast forward to today, I boast over 5 years of immersive experience in Web & Mobile software development. Throughout my career, I have collaborated with various engineering firms, contributing my expertise to diverse projects. Checkout my experience section.<br><br>Currently, i am working on an innovative event ticketing platform (Eventhub) that will significantly transform and enhanced the events industry in my province.<br><br>More over , Beyond coding, I am passionate about expanding my knowledge in Artificial intelligence.During my leisure time, you can find me indulging in pool table and socializing with friends."
 export const testimonials = [
     {
       image:"/assets/GraphQl.svg"

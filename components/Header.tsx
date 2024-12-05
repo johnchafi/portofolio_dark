@@ -22,8 +22,9 @@ export function HeaderMenu() {
                 <Link href='/' className='w-36 justify-start rounded-3xl'>
                     <Image className="rounded-lg" src="/assets/john.png" width={56} height={38} alt='logo' priority={false} placeholder ="empty"/>
                 </Link>
-                <nav className='md:flex items-center justify-between hidden w-full max-w-xs'>
-                    <NavItems />  
+                <nav className='md:flex items-center justify-between hidden w-full max-w-xs gap-4'>
+                    <NavItems /> 
+                    
                 </nav>
                 <div className="flex w-32 justify-end gap-3">
                     <Button className="flex justify-center items-center" variant="outline" size="icon" onClick={() => toggleTheme()}>

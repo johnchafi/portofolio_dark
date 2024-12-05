@@ -15,14 +15,13 @@ export const headerLinks = [
 
 export const experiences = [
   {
-    company : "Self employed | Freelancer",
+    company : "Self employed | Freelance",
     title : "CTO Eventhub",
     imageSrc: "/assets/john.png",
     descriptions:
       [
         "I am building an innovative event ticketing platform (Eventhub) that will significantly transform and enhanced the events industry in my province",
    
-
       ]  
   },
   {

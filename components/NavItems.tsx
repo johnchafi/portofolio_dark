@@ -12,11 +12,6 @@ const NavItems = ({}) => {
         headerLinks.map((link)=>{
            return(
 
-            
-
-
-
-
             <li  key={link.route} className="p-medium-16 whitespace-nowrap sm:my-4">
                 <Link 
                 href={link.route}
@@ -28,7 +23,10 @@ const NavItems = ({}) => {
             </li>
            )
         })
-    }</ul>
+        
+    }
+    <Link className='p-medium-16' href="https://app.enhancv.com/share/712639cb/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank">Resume</Link> 
+    </ul>
   )
 }
 

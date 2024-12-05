@@ -1,4 +1,6 @@
-import React from 'react'
+
+"use client"
+import { useState } from "react"
 import {
     Sheet,
     SheetClose,
@@ -16,12 +18,13 @@ import { Button } from './button'
 import { MenuIcon } from 'lucide-react'
 
 const MobileNav = () => {
+  const [sheetOpen, setSheetOpen] = useState(false);
   return (
     <nav className='md:hidden'>
-        <Sheet >
-            <SheetTrigger className='align-middle'>
+        <Sheet  open={sheetOpen} onOpenChange={setSheetOpen}>
+            <SheetTrigger  className='align-middle'>
             {/* <Button variant="outline" > */}
-                <MenuIcon className='mt-2 w-8'/>
+                <MenuIcon className='mt-2 w-8 text-neutral-400'/>
             {/* </Button> */}
                   
             </SheetTrigger>
@@ -29,14 +32,15 @@ const MobileNav = () => {
                 <Image 
                 className='rounded-lg'
                 src="/assets/john.png"
+
                 width={56}
                 height={38}
                 alt='logo'
                 />
                 {/* <Separator className='border border-gray-50'/> */}
-            <SheetClose asChild>
-                <NavItems />
-            </SheetClose>
+            {/* <SheetClose asChild> */}
+                <NavItems setOpen={setSheetOpen}/>
+            {/* </SheetClose> */}
                 
              
             </SheetContent>
@@ -46,3 +50,5 @@ const MobileNav = () => {
 }
 
 export default MobileNav
+
+

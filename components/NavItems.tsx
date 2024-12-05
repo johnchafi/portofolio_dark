@@ -5,14 +5,19 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 import { SheetClose } from './ui/sheet'
 
-const NavItems = ({}) => {
+// interface Props {
+//     containerStyles?: string;
+//     linkStyles?: string;
+//     underlineStyles?: string;
+//   }
+const NavItems = (props: any) => {
     const pathname = usePathname();
   return (
     <ul className='md:flex-between w-full flex-col items-start  md:flex-row text-neutral-700 dark:text-neutral-400'>{
         headerLinks.map((link)=>{
            return(
 
-            <li  key={link.route} className="p-medium-16 whitespace-nowrap sm:my-4">
+            <li  key={link.route} className="p-medium-16 whitespace-nowrap sm:my-4" onClick={() => props.setOpen? props.setOpen(false) : undefined}>
                 <Link 
                 href={link.route}
                 >
@@ -25,7 +30,7 @@ const NavItems = ({}) => {
         })
         
     }
-    <Link className='p-medium-16' href="https://app.enhancv.com/share/712639cb/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank">Resume</Link> 
+    <Link  href="https://app.enhancv.com/share/712639cb/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank">Resume</Link> 
     </ul>
   )
 }

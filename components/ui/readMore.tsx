@@ -28,7 +28,7 @@ export const ReadMore = ({ id, text, amountOfWords = 40 }: ReadMoreProps) => {
 
   return (
 
-    <p id={id} className='md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400'>
+    <p id={id} className='md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 ml-12'>
       {/* {beginText} */}
       {/* { ReactHtmlParser (beginText) } */}
       <span>

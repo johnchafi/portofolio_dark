@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-      <footer className="w-full pb-2 md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 " id="contact">
+      <footer className="w-full pb-2 md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 ml-12" id="contact">
         {/* background grid */}
   
         <div className="flex flex-col items-center">

@@ -30,7 +30,7 @@ const NavItems = (props: any) => {
         })
         
     }
-    <Link  href="https://app.enhancv.com/share/712639cb/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" target="_blank">Resume</Link> 
+    <Link  href="" target="_blank">Resume</Link> 
     </ul>
   )
 }

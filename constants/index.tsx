@@ -15,17 +15,18 @@ export const headerLinks = [
 
 export const experiences = [
   {
-    company : "Self employed | Freelance",
-    title : "CTO Eventhub",
-    imageSrc: "/assets/john.png",
+    company : "Laval University|(Contractor) | 2025-present",
+    title : "Programmer Analyst",
+    imageSrc: "/assets/ulaval.png",
     descriptions:
       [
-        "I am building an innovative event ticketing platform (Eventhub) that will significantly transform and enhanced the events industry in my province",
+        "Analyze and interpret complex technical problems to develop various types of software solutions.",
+        "Design, test, and develop software applications to meet customer needs.",
    
       ]  
   },
   {
-      company : "Desjardins",
+      company : "Desjardins | (Contractor) | 2022-2024",
       title : "Programmer Analyst (Contractor)",
       imageSrc: "/assets/Logo-Desjardins.jpeg",
       descriptions:
@@ -41,7 +42,7 @@ export const experiences = [
         ]  
   },
  {
-  company : "Krispii.inc, Leonard Agency web, Laval University",
+  company : "Krispii.inc, Leonard Agency web, Laval University | 2019-2022",
   title : "Full stack developer",
   imageSrc:"/assets/image_holder.png",
   descriptions:
@@ -79,6 +80,23 @@ export const socialMedia = [
 
 export const projects = [
   {
+    title : 'Eventhubx',
+    description: 'Event & Ticketing Platform for hosting events.',
+    image:'/assets/eventhub.png',
+    link:'https://eventhubx.netlify.app/',
+    languages:['NextJs', 'Tailwind', 'NodeJS', 'MongoDB']
+
+  },
+   
+  {
+    title : 'Covivaxada',
+    description: 'A website for covid research',
+    image:'/assets/covixada.png',
+    link:'https://c19vaxda-staging.netlify.app',
+    languages:['NodejS', 'Styled components', 'External API', 'VueJs']
+
+  },
+  {
     title : 'Denarius',
     description: 'I designed and implemented professional pages for Denarius exchange',
     image:'/assets/denarius.png',
@@ -86,22 +104,7 @@ export const projects = [
     languages:['Javascript', 'HTML', 'CSS']
 
   },
-  {
-    title : 'Eventhub',
-    description: 'Event & Ticketing Platform for hosting events.',
-    image:'/assets/eventhub.png',
-    link:'',
-    languages:['NextJs', 'Tailwind', 'NodeJS', 'MongoDB']
 
-  },
-  {
-    title : 'Umovie',
-    description: 'A clone of IMDB movie',
-    image:'/assets/movie.png',
-    link:'https://moviejohn.netlify.app/',
-    languages:['ReactJs', 'Styled components', 'External API']
-
-  },
 
   {
     title : 'Portofolio',

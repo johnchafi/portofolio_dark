@@ -4,12 +4,13 @@ import HomeComponent from "@/components/Home";
 import { BackgroundLines } from "@/components/ui/background-lines";
 export default function Home() {
   return (
-    <div className="flex h-screen flex-col">
+    <div className="flex h-full flex-col relative">
       
         <HeaderMenu />
-          <main className="flex-1">
+         <main className="flex-1 md:mx-24 mx-4">
             <HomeComponent />
           </main>
+          
         <Footer />
    
      

@@ -17,19 +17,19 @@ export function HeaderMenu() {
  const navItems = ["Expericence", "Projects", "Contact"]
   return (
 
-        <header className="w-full sticky top-0 z-30 transition-all" >
+        <header className="w-full transition-all" >
             <div className="max-w-7xl lg:mx-auto p-5 md:px-10 xl:px-0 w-full flex justify-between">
                 <Link href='/' className='w-36 justify-start rounded-3xl'>
-                    <Image className="rounded-lg" src="/assets/john.png" width={56} height={38} alt='logo' priority={false} placeholder ="empty"/>
+                    <Image className="rounded-lg" src="/assets/grad2.jpeg" width={150} height={68} alt='logo' priority={false} placeholder ="empty"/>
                 </Link>
                 <nav className='md:flex items-center justify-between hidden w-full max-w-xs gap-4'>
                     <NavItems /> 
                     
                 </nav>
                 <div className="flex w-32 justify-end gap-3">
-                    <Button className="flex justify-center items-center" variant="outline" size="icon" onClick={() => toggleTheme()}>
-                        <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-neutral-700 dark:text-neutral-400" />
-                        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-neutral-700 dark:text-neutral-400" />
+                    <Button className="flex justify-center items-center dark:bg-black"  size="icon" onClick={() => toggleTheme()}>
+                        <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-white" />
+                        <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-white" />
                        
                     </Button>
                   

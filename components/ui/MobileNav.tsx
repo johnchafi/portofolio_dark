@@ -31,7 +31,7 @@ const MobileNav = () => {
             <SheetContent className='flex flex-col gap-6'>
                 <Image 
                 className='rounded-lg'
-                src="/assets/john.png"
+                src="/assets/grad2.jpeg"
 
                 width={56}
                 height={38}

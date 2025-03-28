@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-      <footer className="w-full pb-2 md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 ml-12" id="contact">
+      <footer className="w-full mt-4 md:p-medium-16 p-medium-14 text-neutral-700 dark:text-neutral-400 mb-12 px-4" id="contact">
         {/* background grid */}
   
         <div className="flex flex-col items-center">
@@ -33,7 +33,7 @@ const Footer = () => {
             Copyright © 2024 Jean de Dieu Uwimana
           </p>
   
-          <div className="flex items-center md:gap-3 gap-6 ">
+          <div className="flex items-center md:gap-3 gap-6 mt-8">
             {socialMedia.map((info) => (
               <div
                 key={info.id}

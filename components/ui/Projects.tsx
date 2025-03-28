@@ -17,8 +17,8 @@ type ProjectProps = {
 }
 export function Project({title, description, image, link, languages} : ProjectProps) {
   return (
-    <CardContainer className="iter-var md:ml-1 ml-16">
-      <CardBody className="w-full bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1]  sm:w-[30rem] h-auto rounded-xl border">
+    <CardContainer className="iter-var md:mx-8">
+      <CardBody className="w-full bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] h-auto rounded-xl border">
         <CardItem
           translateZ="50"
           className="mx-2  md:p-medium-16 p-medium-14"
